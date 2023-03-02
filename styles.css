@@ -1,11 +1,86 @@
+*{
+    list-style:none;
+}
 body{
     min-height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(102, 102, 102);
 }
 section{
     width:480px;
     height: 1020px;
     border:1px solid #ccc;
+    position: relative;
+}
+
+#title{
+     width: 2000px;
+    height: 100px; 
+    position:absolute;
+    align-items: center;
+    left: 190px;
+    font-family: "Gill sans MT Condensed";
+     font-style:italic; 
+    font-weight: bold;
+    top: 20px;
+    
+}
+.menu-dash{
+    position: relative;
+    top: 25px;
+    left: -5px;
+    
+}
+#menu-button{
+    position:absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 100px;
+    height:100px;
+    top: 10px;
+}
+.menu-dash:hover{
+    transform: scale(105%);
+}
+.dash1{
+    position:absolute;
+    /* border: 1px solid black; */
+    width: 50px;
+    background-color: black;
+    height: 3px;
+    top: 0px;
+}
+.dash2{
+    position:absolute;
+    /* border: 1px solid black; */
+    width: 25px;
+    background-color: black;
+    height: 3px;
+    top: 20px;
+    
+
+
+}
+.dash3{
+    position:absolute;
+    /* border: 1px solid black; */
+    width: 20px;
+    background-color: black;
+    height: 3px;
+    top:40px;
+
+
+}
+#card-mm{
+    position: absolute;
+    width:100px;
+    height:80px;
+    right:0;
+    top:5px;
+    padding:12px;
+    margin: 12px;
+
+
 }
