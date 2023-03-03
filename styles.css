@@ -27,23 +27,28 @@ section{
     top: 20px;
     
 }
-.menu-dash{
-    position: relative;
-    top: 25px;
-    left: -5px;
-    
-}
+
 #menu-button{
     position:absolute;
     border-radius: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100px;
     height:100px;
     top: 10px;
+    left:10px;
 }
-.menu-dash:hover{
+.menu-dash{
+    position: relative;
+    top: 15px;
+    left: -10px;
+    align-items: center;
+}
+#menu-button:hover{
+    transform: scale(110%);
+}
+/* .menu-dash:hover{
     transform: scale(105%);
-}
+} */
 .dash1{
     position:absolute;
     /* border: 1px solid black; */
