@@ -4,6 +4,7 @@
     /* margin:0;
     padding:0; */
     box-sizing: border-box;
+    text-decoration: none;
 }
 body{
     min-height: 100vh;
@@ -131,6 +132,7 @@ section{
     position: absolute;
     right:110px;
     top:156px;
+    /* border: 1px solid black; */
 }
 #paragraph{
     position: absolute;
@@ -138,6 +140,39 @@ section{
     font-size: 2.3em;
     top:-15px;
     font-family:"Ubuntu";
-    font-weight: bold;
+    font-weight:bold;
     left : 15px;
+    color:black;
+}
+ #days-remaining:hover{
+    transform:scale(40%);
+    cursor:pointer;
+
+} 
+#renovar-suscripcion:hover{
+    transform: scale(42%);
+    cursor: pointer;
+}
+#renovar-suscripcion:visited{
+    color:white;
+
+}
+#renovar-suscripcion:link{
+    color:white;
+}
+#renovar-suscripcion:active{
+    color:white;
+}
+#coach-button, #work-out-icon, #group-button{
+    transform:scale(45%);
+    position: absolute;
+
+}
+#coach-button{
+    top:210px;
+    left: 130px;
+}
+#work-out-icon{
+    top: 210px;
+    left: 0px;
 }
