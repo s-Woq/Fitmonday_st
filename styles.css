@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 *{
     list-style:none;
     /* margin:0;
@@ -11,7 +13,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(102, 102, 102);
+    background-color: rgba(216, 239, 221, 0.24);
 }
 section{
     width:480px;
@@ -40,15 +42,15 @@ section{
     font-family: "Gill sans MT Condensed";
     font-style:italic; 
     font-weight: bold;
-    top: 20px;
+    top: 10px;
     
 }
 
 
 .menu-dash{
     position: relative;
-    top: -20px;
-    left: -20px;
+    top: -22px;
+    left: -30px;
     
 }
 #menu-button:hover{
@@ -98,14 +100,16 @@ section{
     transform:scale(105%);
 }
 #invisible-button{
-    /* border: 1px solid black; */
-    border-radius: 50%;
-    width:100px;
-    height:100px;
+    border: none;
+    border-radius: 10%;
+    width:80px;
+    height:70px;
     position: relative;
     background-color: transparent;
     left: 10px;
-    border: none;
+    top: 10px;
+     
+   
 
 }
 #invisible-button:hover{
@@ -170,9 +174,31 @@ section{
 }
 #coach-button{
     top:210px;
-    left: 130px;
+    left: 300px;
 }
 #work-out-icon{
     top: 210px;
     left: 0px;
+}
+#group-button{
+    top:210px;
+    left:130px;
+}
+#coach-button:hover ,#group-button:hover, #work-out-icon:hover{
+    transform:scale(50%)
+}
+#advice-message{
+    position:absolute;
+    top :120px;
+    left: 50px;
+    font-family:"Montserrat" ;
+    font-weight: bolder;
+}
+#Recomendado{
+    position: absolute;
+    top: 320px;
+    left: 45px;
+    font-family:"Tilt Neon";
+    font-weight: lighter;
+    font-size: 1.3em;
 }
