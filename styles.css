@@ -9,39 +9,51 @@ body{
     background-color: rgb(102, 102, 102);
 }
 section{
-    width:480px;
+    width:480em;
     height: 1020px;
     border:1px solid #ccc;
     position: relative;
 }
+#memebership-button{
+    position: absolute;
+    border:none;
+    width:200px;
+    height:125px;
+    right:10px;
+    background-color:transparent;
+
+}
+#memebership-button:hover{
+    transform:scale(110%);
+}
 
 #title{
-     width: 2000px;
+    width: 2000px;
     height: 100px; 
     position:absolute;
-    align-items: center;
-    left: 190px;
+    justify-content: center;
+    left: 50%;
     font-family: "Gill sans MT Condensed";
-     font-style:italic; 
+    font-style:italic; 
     font-weight: bold;
     top: 20px;
     
 }
 
-#menu-button{
+/* #menu-button{
     position:absolute;
     border-radius: 50%;
-    /* border: 1px solid black; */
+     border: 1px solid black; 
     width: 100px;
     height:100px;
     top: 10px;
     left:10px;
-}
+} */
 .menu-dash{
     position: relative;
-    top: 15px;
-    left: -10px;
-    align-items: center;
+    top: -20px;
+    left: -20px;
+    
 }
 #menu-button:hover{
     transform: scale(110%);
@@ -63,10 +75,8 @@ section{
     width: 25px;
     background-color: black;
     height: 3px;
-    top: 20px;
+    top: 15px;
     
-
-
 }
 .dash3{
     position:absolute;
@@ -74,7 +84,7 @@ section{
     width: 20px;
     background-color: black;
     height: 3px;
-    top:40px;
+    top:30px;
 
 
 }
@@ -86,6 +96,29 @@ section{
     top:5px;
     padding:12px;
     margin: 12px;
+     
+} 
+#card-mm:hover{
+    transform:scale(105%);
+}
+#invisible-button{
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    position: relative;
+    background-color: transparent;
+    left: 10px;
+    border: none;
 
+}
+#invisible-button:hover{
+    transform: scale(110%);
+    
+}
+#renovar-suscripcion{
+    position: absolute;
+    left:200px;
+   transform: scale(50%);
 
 }
