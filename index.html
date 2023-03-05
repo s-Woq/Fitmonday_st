@@ -11,22 +11,22 @@
     <section>
         <script >
             
-            // var nombre = prompt("Ingresa un nombre")
-            // var days = 0
-            // validar_dias= (dias)=> (dias > 0)? "Welcome Back": "U have no days left, U can renovate ur subscription!"   
+            var nombre = prompt("Ingresa un nombre")
+            var days = 0
+            validar_dias= (dias)=> (dias > 0)? "Welcome Back": "U have no days left, U can renovate ur subscription!"   
             
-            //      const second = 1000;
-            //     const minute = second *60;
-            //     const hour = minute  *60;
-            //     const day = hour *24;
-            //     function countDays(){
-            //     let init_day=new Date(document.from_main.date_ini.value);
-            //     let date_end=new Date(document.from_main.date_end.value)
+                 const second = 1000;
+                const minute = second *60;
+                const hour = minute  *60;
+                const day = hour *24;
+                function countDays(){
+                let init_day=new Date(document.from_main.date_ini.value);
+                let date_end=new Date(document.from_main.date_end.value)
 
-            //     let diff= date_end.getTime() - date.init_day.getTime()
-            //     document.getElementById("days").innerText = Math.floor (diff/day)
+                let diff= date_end.getTime() - date.init_day.getTime()
+                document.getElementById("days").innerText = Math.floor (diff/day)
 
-            // }
+            }
             
         
         </script>
@@ -48,33 +48,33 @@
             </div>
             <!-- Working on small buttons down here -->
             <div id="username"><h2>Hi <script> document.write(nombre.charAt(0).toUpperCase() + nombre.slice(1));  </script></h2></div>
-            <div id="days-remaining"><a href="#"><img src="img/1x/Asset 7.png" alt="renovar-suscripcion"><p id="paragraph">Days remaining <script>document.write(countDays)</script></p></a></div>
+            <div id="days-remaining"><a href="#"><img src="img/1x/Asset 7.png" alt="renovar-suscripcion"><p id="paragraph">Days remaining <script></script></p></a></div>
 <!-- Making a days counter -->
 <div class="container">
-            <div class="until">
+            <div class="until" id="myCountdown">
                 <div class="until__component">
                     <div class="until__numeric until__numeric--days item1"><p id="counterd">00</p> </div>  
-                    <div class="until__unit"><p>Days</p></div>
+                    <div class="until__unit"><p style="font-weight: bold;">Days</p></div>
                 </div>
             </div>
             <div class="until">
                 <div class="until__component">
                     <div class="until__numeric until__numeric--hours item2"><p id="counterh">00</p> </div>  
-                    <div class="until__unit"><p>Hours</p></div>
+                    <div class="until__unit"><p style="font-weight: bold;">Hours</p></div>
                 </div>
             </div>
             <div class="until">
                 <div class="until__component">
                     <div class="until__numeric until__numeric--minutes item3"><p id="counterm">00</p> </div>  
-                    <div class="until__unit"><p>Minutes</p></div>
+                    <div class="until__unit"><p style="font-weight: bold;">Minutes</p></div>
                 </div>
             </div>
             <div class="until">
                 <div class="until__component">
                     <div class="until__numeric until__numeric--seconds item4"><p id="counters">00</p> </div>  
-                    <div class="until__unit"><p>Seconds</p></div>
+                    <div class="until__unit"><p style="font-weight: bold;">Seconds</p></div>
                 </div>
-                <div class="until__event">.</div>
+                <div ><p class="until__event">Until 05 April 2023</p> </div>
             </div>
         </div>
             <!-- End of making days counter -->
@@ -90,6 +90,8 @@
             <div id="Recomendado"><p>Recomendado</p></div>
             
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/plugin/duration.min.js"></script>
         <script src="js/main.js"></script>
     </section>
     

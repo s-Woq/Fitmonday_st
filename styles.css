@@ -225,17 +225,33 @@ section{
     /* border: 1px solid black; */
     margin:50px;
     width: 20px;
-    height: 20px;
+    height: 15px;
     background:#009578;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-family: "Tilt Neon";
-    font-size: 0.5em;
-    place-items: center;
+    font-size: 0.6em;
+    place-items: end stretch;
     text-align: center;
+    
     
 }
 #counterd{
+    position: absolute;
+    top:30px;
     
       
+}
+.until__event{
+    position: absolute;
+    font-family: "Tilt Neon";
+    font-weight: bold;
+    display: flex;
+    top:15px;
+    right:-67px;
+    background-color: rgba(74, 73, 73, 0.7);
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    
+
 }
