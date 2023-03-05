@@ -9,7 +9,7 @@
 </head>
 <body>
     <section>
-        <script >
+        <!-- <script >
             
             var nombre = prompt("Ingresa un nombre")
             var days = 0
@@ -29,27 +29,44 @@
             }
             
         
-        </script>
+        </script> -->
        
         <h1 id = "title">Fitmons</h1>
         <header>
             
         <a href="#"> <button id ="memebership-button" style="cursor:pointer"><img id= "card-mm"src="img/Asset 1.svg" alt="Card memebership"></button></a>
-            
+            <!-- <nav>
                 <a href="menu.html"><button id="invisible-button" style="cursor:pointer">                               
                     <div class="menu-dash">
-                    <ul >
-                            <li class="dash1"></li>
-                            <li class="dash2"></li>
-                            <li class="dash3"></li>
-                        </ul>
-                    
-                </button></a>           
-            </div>
+                        <img id="dashes" src="img/Asset 12.png" alt="dashes">
+                    </div>
+                     <ul class=".menu_vertical">
+                         <li><a href="#">My account</a></li>
+                         <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Contact us</a></li>
+                         <li><a href="#">About us</a></li>
+                     </ul>
+                </button></a> 
+                
+            </nav>       -->
+            
+            <nav>
+                <ul class = "menu_desplegable">
+                    <li><a href="#"><img id="dashes" src="img/Asset 12.png" alt="dashes"></a>
+                    <ul class="menu_vertical">
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
+            
             <!-- Working on small buttons down here -->
-            <div id="username"><h2>Hi <script> document.write(nombre.charAt(0).toUpperCase() + nombre.slice(1));  </script></h2></div>
-            <div id="days-remaining"><a href="#"><img src="img/1x/Asset 7.png" alt="renovar-suscripcion"><p id="paragraph">Days remaining <script></script></p></a></div>
-<!-- Making a days counter -->
+            <div id="username"><h2>Hola! <script> document.write(nombre.charAt(0).toUpperCase() + nombre.slice(1));  </script></h2></div>
+            <div id="days-remaining"><a href="#"><img src="img/1x/Asset 7.png" alt="renovar-suscripcion"><p id="paragraph">Time remaining<script></script></p></a></div>
+            <!-- Making a days counter -->
 <div class="container">
             <div class="until" id="myCountdown">
                 <div class="until__component">

@@ -45,14 +45,74 @@ section{
     top: 10px;
     
 }
+#dashes{
+    position: absolute;
+    transform: scale(35%);
+    left:-30px;
+    top:-10px;
+}
+nav{
+    position: absolute;
+    max-width: 300px;
+    margin:auto;
+    background-color:transparent;
+    font-size: 20px;
+    margin-top: 20px;
+}
+nav:hover {
+    transform: scale(105%);
+}
+#dashes:hover{
+    transform: scale(40%);
+}
+.menu_desplegable{
+    float: right;
+    list-style: none;
+    display: flex;
+    justify-content: space-around ;
+}
+.menu_desplegable > li > a{
+    display: block;
+    padding:15px 20px;
+    color:black;
+    text-decoration: none;
+}
+.menu_vertical{
+    position:absolute;
+    display:none;
+    list-style: none;
+    width:200px;
+    background-color: rgb(0, 0, 0);
+}
+.menu_desplegable li:hover .menu_vertical{
+    display: block;
+    
+}
+.menu_vertical{
+    background-color: rgb(256, 256, 256);
+    width:20vh;
+    height: 100vh;
+    
+
+}
+.menu_vertical li a{
+    display: block;
+    color:black;
+    padding:0px 15px 15px 20px;
+    text-decoration: none;
+    font-family: "Tilt Neon";
+}
 
 
-.menu-dash{
+/* .menu-dash{
     position: relative;
+    display: none;
+    list-style: none;
+    width: 200px;
     top: -22px;
     left: -30px;
     
-}
+} */
 #menu-button:hover{
     transform: scale(110%);
 }
@@ -113,7 +173,10 @@ section{
 
 }
 #invisible-button:hover{
-    transform: scale(110%);
+    transform: scale(105%);
+    background-color: rgba(0, 0, 0, 0.7);
+   
+    
     
 }
 #renovar-suscripcion{
@@ -127,6 +190,7 @@ section{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    top:76px;
     left: 50px;
     font-size: 1.3em;
     
@@ -148,6 +212,7 @@ section{
     font-weight:bold;
     left : 20px;
     color:black;
+    text-align:center;
 }
  #days-remaining:hover{
     transform:scale(40%);
